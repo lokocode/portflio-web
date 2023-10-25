@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="logo">
+                <a href="#">LOKO</a>
+            </div>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">service</a></li>
+                <li><a href="#">Project</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+            <i class="fa fa-bars"></i>
+        </div>
+        <div class="hero">
+            <h4>Hayy !! There</h4>
+            <h1>I'M<samp id="text"></samp></h1>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Perferendis aliquam impedit similique accusantium saepe, recusandae eum? Aspernatur ad illo odit maiores esse inventore nesciunt quibusdam, quasi accusamus placeat? Laudantium, optio.</p>
+            <div class="social">
+                <div class="icon">
+                    <i class="fa-brands fa-facebook-f"></i>
+                    </div>
+                    <div class="icon">
+                        <i class="fa-brands fa-instagram"></i>                     </div>
+                        <div class="icon">
+                            <i class="fa-brands fa-x-twitter"></i>
+                            </div>
+                            <div class="icon">
+                                <i class="fa-brands fa-linkedin-in"></i> 
+                </div>
+            </div>
+                 <button>Download CV</button>
+        </div>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/tilt.js/1.0.3/tilt.jquery.min.js"></script>
+      <script>
+            var typed = new typed("#text",{
+                String:["UX/UI DESIGNER","UI DESIGNER","PHOTOGARAPHER","ELIZIABEITH LOKO"],
+              typeSpeed:50
+            })
+
+            let menu = document.querySelector('.header ul')
+            let bars = document.querySelector(".header .fa-bars")
+
+            bars.addEventListener("click",function(){
+              menu.classList.toggle();
+            })
+      </script>
+</body>
+</html>
